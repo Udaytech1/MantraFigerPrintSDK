@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MFS100MatchFinger" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/imgFinger"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/imagefinger"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/finger" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnInit"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/Init" />
+
+                    <Button
+                        android:id="@+id/btnUninit"
+                        style="@style/buttonbig2"
+                        android:background="@drawable/button"
+                        android:onClick="onControlClicked"
+                        android:text="@string/UnInit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        android:text="@string/EnterMobileNo"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/txtSearchMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/message"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:maxLength="10"
+                        android:minLines="10"
+                        android:text=""
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/lblMessage"
+            style="@style/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/message"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/txtEventLog"
+            style="@style/message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:background="@drawable/message"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/buttonbig2"
+            android:background="@drawable/button"
+            android:onClick="onControlClicked"
+            android:text="@string/ClearLog" />
+
+    </LinearLayout>
+
+</LinearLayout>

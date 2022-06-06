@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BiometricAttendance</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">Biometric Attendance</string>
+    <string name="Init">INIT</string>
+    <string name="UnInit">UNINIT</string>
+    <string name="ExtractISO">ISO(FMR)</string>
+    <string name="ExtractWSQ">WSQ</string>
+    <string name="MatchISO">MATCH ISO</string>
+    <string name="foorLoop">Init/Uninit</string>
+    <string name="ClearLog">CLEAR LOG</string>
+    <string name="SyncCapture">CAPTURE</string>
+    <string name="StopSyncCapture">STOP CAP</string>
+    <string name="WriteBit">Write Bit</string>
+    <string name="ReadBit">Read Bit</string>
+    <string name="ChangeKey">Change Key</string>
+    <string name="GetKey">Get Key</string>
+
+    <string-array name="MFS100Ver">
+        <item>41</item>
+        <item>31</item>
+    </string-array>
+
+
+    <string name="EmployeeName">Enter Staff Name</string>
+    <string name="MobileNo">Enter mobile n.</string>
+    <string name="DistrictCode">Enter district code</string>
+    <string name="BlockCode">Enter block code</string>
+    <string name="ClusterCode">Enter cluster code</string>
+    <string name="SchoolCode">Enter school code</string>
+    <string name="RegisterAction">Regsiter now</string>
+
+    <string name="EnterMobileNo">Search Using Mobile No. :</string>
+
+    <string name="BtnRegistration">Regsiteration your staff</string>
+    <string name="BtnAttendance">Authenticate your staff</string>
+
+    <string name="title_activity_preference">Preference</string>
+</resources>
